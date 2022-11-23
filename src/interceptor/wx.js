@@ -1,4 +1,4 @@
-import { isProd } from '../config/env';
+import { isProd } from '../config/env/index';
 
 const DEV_KEY_SUFFIX = '__dev_suffix__';
 
