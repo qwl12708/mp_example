@@ -16,7 +16,7 @@ function addStorageEnv() {
     getStorageSync,
     setStorageSync,
     removeStorage,
-    removeStorageSync,
+    removeStorageSync
     // TODO 是否要重写 getStorageInfo 和 getStorageInfoSync ？
     // getStorageInfo,
     // getStorageInfoSync,
@@ -26,7 +26,7 @@ function addStorageEnv() {
   const syncFns = { getStorageSync, setStorageSync, removeStorageSync };
   /** @type {PropertyDescriptorMap} */
   const obj = {};
-  Object.keys(fns).forEach((fnName) => {
+  Object.keys(fns).forEach(fnName => {
     obj[fnName] = {
       get() {
         return function _({ key, ...other }) {
@@ -35,7 +35,7 @@ function addStorageEnv() {
       }
     };
   });
-  Object.keys(syncFns).forEach((fnName) => {
+  Object.keys(syncFns).forEach(fnName => {
     obj[fnName] = {
       get() {
         return function _(key, data) {

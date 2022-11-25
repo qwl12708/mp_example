@@ -9,7 +9,7 @@ Page = function Page(param) {
     onLoad(options) {
       console.debug(`[${this.route}] onLoad`);
       const _options = {};
-      Object.keys(options).forEach((key) => {
+      Object.keys(options).forEach(key => {
         const value = options[key];
         _options[key] = value;
         if (isString(value)) {
@@ -24,6 +24,6 @@ Page = function Page(param) {
       if (isFunc(onLoad)) {
         onLoad.call(this, _options);
       }
-    },
+    }
   });
 };

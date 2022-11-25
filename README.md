@@ -1,17 +1,16 @@
 # mp_example
 
 1、项目结构
-- src
-  - ...
-- .eslintrc.js
-- .eslintignore
-- .gitignore
-- .lintstagedrc.json
-- prettierrc
-- package.json
-- project.config.json
-- READ.md
-- yarn.lock
+|- src
+|---| ...
+|- .eslintrc.js
+|- .eslintignore
+|- .gitignore
+|- .lintstagedrc.json
+|- prettierrc
+|- package.json
+|- project.config.json
+|- READ.md
 ...
 
 2、开发规范

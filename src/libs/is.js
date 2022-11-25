@@ -20,7 +20,7 @@ export function isObj(o) {
  */
 export function isEmptyObj(object) {
   return Reflect.ownKeys(object).length === 0;
-};
+}
 
 /**
  * @param {any} s
@@ -59,8 +59,5 @@ export function isBlank(s) {
 }
 
 export function isEmptyUrlParam(v) {
-  return typeof v === 'undefined'
-    || v === 'undefined'
-    || v === 'null'
-    || v === null;
+  return typeof v === 'undefined' || v === 'undefined' || v === 'null' || v === null;
 }
